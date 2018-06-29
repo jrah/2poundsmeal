@@ -1,0 +1,15 @@
+---
+declared-services:
+  visual-recognition-service:
+    label: watson_vision_combined
+    plan: lite
+applications:
+- name: 2poundsmeal
+  path: .
+  command: npm start
+  memory: 3000M
+  instances: 5
+  services:
+  - visual-recognition-service
+  env:
+    NODE_ENV: production
