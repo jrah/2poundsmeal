@@ -14,8 +14,8 @@ var watson = require('watson-developer-cloud');
 // Create the service wrapper
 var visualRecognition = watson.visual_recognition({
   version: 'v3',
-  api_key: process.env.API_KEY || '<api-key>',
-  version_date: '2015-05-19'
+  api_key: process.env.API_KEY || 'kjdV1UXXqdNQRfuQG-DC08BgffvabZEZlgBURQdGzMkn',
+  version_date: '2015-03-19'
 });
 
 // we could embed the expected category into the filename, but then someone might think the service was cheating. so, this will do for now.

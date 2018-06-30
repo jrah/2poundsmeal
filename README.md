@@ -56,7 +56,7 @@ Give it a try! Click the button below to fork into IBM DevOps Services and deplo
   The `.env` file will look something like the following:
 
   ```none
-  VISUAL_RECOGNITION_API_KEY=
+  VISUAL_RECOGNITION_API_KEY=kjdV1UXXqdNQRfuQG-DC08BgffvabZEZlgBURQdGzMkn
   ```
 
 7. Install the dependencies you application need:
@@ -153,6 +153,3 @@ training form with your existing classifier.
 [getting_started]: https://console.bluemix.net/docs/services/watson/index.html#about
 [node_js]: http://nodejs.org/
 [npm]: https://www.npmjs.com
-
-
-
