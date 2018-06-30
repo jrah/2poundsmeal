@@ -20,7 +20,7 @@ We only provide data on branded foods around £3 that students can see around Sh
 
 ## App Link
 The website can be access by the link below 
-https://poundmeal-node.herokuapp.com/
+- https://poundmeal-node.herokuapp.com/
 
 ## Built With
 - IBM Watson - Visual recognition 
