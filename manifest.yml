@@ -2,7 +2,7 @@
 declared-services:
   visual-recognition-service:
     label: watson_vision_combined
-    plan: lite
+    plan: free
 applications:
 - name: 2poundsmeal
   path: .
