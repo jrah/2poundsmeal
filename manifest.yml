@@ -7,7 +7,7 @@ applications:
 - name: 2poundsmeal
   path: .
   command: npm start
-  memory: 3000M
+  memory: 512M
   instances: 5
   services:
   - visual-recognition-service

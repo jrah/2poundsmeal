@@ -194,22 +194,11 @@ function setupUse(params) {
     let formData = $(pclass + 'form').serialize();
     // Grab all form data
     $.post('/api/classify', formData)
-        .done(showResult)
-        .error(function (error) {
-          $loading.hide();
-          console.log(error);
-
-          if (error.status === 429) {
-            showError(errorMessages.TOO_MANY_REQUESTS);
-          } else if (error.responseJSON && error.responseJSON.error) {
-            showError('We had a problem classifying that image because ' + jpath.jpath('/responseJSON/error/description',error,' of an unknown error'));
-          } else {
-            showError(errorMessages.SITE_IS_DOWN);
-          }
-        }).always(function () {
+        .done(showResult).always(function () {
       afterFunction ? afterFunction() : false;
       unlock('classify');
     });
+
   }
 
   /*

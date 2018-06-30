@@ -7,20 +7,7 @@
         | To create a temporary trial classifier, select at least 3 classes from the example image bundles.
       h2 Example Image Bundles
       ._training--examples
-        ._training--example.clickable(data-kind='dogs')
-          h3 Dog Breeds
-          img(src='/images/bundles/dogs/thumbnail.jpg')
-        ._training--example.clickable(data-kind='moleskine')
-          h3 Moleskine Types
-          img(src='/images/bundles/moleskine/thumbnail.jpg')
-        ._training--example.clickable(data-kind='insurance')
-          h3 Insurance Claims
-          img(src='/images/bundles/insurance/thumbnail.jpg')
-        ._training--example.clickable(data-kind='omniearth')
-          h3 Satellite Imagery
-          img(src='/images/bundles/omniearth/thumbnail.png')
-        ._training--example.clickable(data-kind='user')
-          h3 Use Your Own
+          h3 Upload your food image
           ._training--use-your-own.square
             ._training--use-your-own-plus +
 
@@ -156,7 +143,7 @@
           button._negative(data-name='negative') Select
       ._examples--contact-sheet(data-kind='moleskine')
         img
-      .license Images courtesy of IBM Watson partner 
+      .license Images courtesy of IBM Watson partner
         a(class="base--a", href='http://www.moleskine.com/us/', target='_blank') Moleskine.
     ._examples(data-kind='omniearth')
       a.select_all(data-kind='omniearth') Select All
@@ -179,7 +166,7 @@
           button._positive(data-name='tennis') Select
       ._examples--contact-sheet(data-kind='omniearth')
         img
-      .license Images courtesy of IBM Watson partner 
+      .license Images courtesy of IBM Watson partner
         a(class="base--a", href='http://omniearth.net/' target='_blank') OmniEarth.
     .train--row
       #formStateErrorMessage
@@ -203,7 +190,7 @@
       .loader-container
         svg.loader(viewBox='25 25 50 50')
           circle.loader__path(cx='50', cy='50', r='20')
-      p.base--p.loading--message Watson is training your new classifier. 
+      p.base--p.loading--message Watson is training your new classifier.
       p.base--p.loading--message This might take up to 3-4 minutes based on number of images.
     .error.train--error
       img.train--error-image.error--image(src='images/icons/alert.svg')

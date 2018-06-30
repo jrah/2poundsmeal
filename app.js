@@ -37,8 +37,8 @@ require('./config/express')(app);
 // If no API Key is provided here, the watson-developer-cloud@2.x.x library will check for an VISUAL_RECOGNITION_API_KEY
 // environment property and then fall back to the VCAP_SERVICES property provided by the IBM Cloud.
 var visualRecognition = new watson.VisualRecognitionV3({
-  // api_key: '<api-key>',
-  version_date: '2015-05-19'
+  api_key: 'kjdV1UXXqdNQRfuQG-DC08BgffvabZEZlgBURQdGzMkn',
+  version_date: '2018-03-19'
 });
 
 app.get('/', function(req, res) {

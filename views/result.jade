@@ -1,0 +1,14 @@
+extends ./layout.jade
+
+block content
+  .tab-panels.tab-views(role='tabpanel')
+    ul.tab-panels--tab-list.tab-views--tab-list(role='tablist')
+      li.tab-panels--tab-list-item.tab-views--tab-list-item.base--li(role='presentation')
+        a.tab-panels--tab.tab-views--tab(href='/', aria-controls='panel1', role='tab') Try
+      li.tab-panels--tab-list-item.tab-views--tab-list-item.base--li(role='presentation')
+        a.tab-panels--tab.tab-views--tab.active(href='/result', aria-controls='panel2', role='tab') Result
+    .tab-panels--tab-content
+      ._demo--container
+        #error
+      include ./includes/result.jade
+      include ./includes/test.jade
